@@ -2,7 +2,7 @@
   "name": "modern-cobalt2-vscode",
   "displayName": "Modern Cobalt2",
   "description": "A modern take on the Cobalt2 colour scheme — deep navy blues with golden accents",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "kud",
   "icon": "images/icon.png",
   "engines": {
