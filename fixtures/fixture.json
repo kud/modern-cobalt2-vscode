@@ -1,0 +1,31 @@
+{
+  "name": "modern-cobalt2",
+  "version": "1.0.0",
+  "enabled": true,
+  "count": 42,
+  "ratio": 3.14,
+  "nothing": null,
+  "tags": ["dark", "cobalt", "modern", "flat"],
+  "palette": {
+    "background": "#062335",
+    "surface": "#142e3f",
+    "border": "#324858",
+    "highlight": "#1d3546",
+    "text": "#d6dadd",
+    "muted": "#abb5c7"
+  },
+  "config": {
+    "retries": 3,
+    "timeout": 5000,
+    "baseUrl": "https://api.example.com",
+    "features": {
+      "darkMode": true,
+      "animations": false,
+      "telemetry": null
+    }
+  },
+  "contributors": [
+    { "name": "kud", "role": "author" },
+    { "name": "anomalyco", "role": "inspiration" }
+  ]
+}

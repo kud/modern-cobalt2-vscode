@@ -1,0 +1,48 @@
+{
+  "name": "modern-cobalt2-vscode",
+  "displayName": "Modern Cobalt2",
+  "description": "A modern take on the Cobalt2 colour scheme — deep navy blues with golden accents",
+  "version": "0.1.0",
+  "publisher": "kud",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "cobalt",
+    "cobalt2",
+    "navy",
+    "blue",
+    "gold"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Modern Cobalt2",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cobalt2.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "mkdir -p build && vsce package --no-dependencies --out build/",
+    "install-ext": "npm run package && code --install-extension build/modern-cobalt2-vscode-$(node -p \"require('./package.json').version\").vsix --force",
+    "ls": "vsce ls",
+    "release:patch": "npm version patch --no-git-tag-version && V=$(node -p \"require('./package.json').version\") && git add package.json package-lock.json && git commit -m \"🔖 chore(release): bump to $V\" && git tag \"v$V\" && git push && git push --tags && echo \"Bumped to v$V\"",
+    "release:minor": "npm version minor --no-git-tag-version && V=$(node -p \"require('./package.json').version\") && git add package.json package-lock.json && git commit -m \"🔖 chore(release): bump to $V\" && git tag \"v$V\" && git push && git push --tags && echo \"Bumped to v$V\"",
+    "release:major": "npm version major --no-git-tag-version && V=$(node -p \"require('./package.json').version\") && git add package.json package-lock.json && git commit -m \"🔖 chore(release): bump to $V\" && git tag \"v$V\" && git push && git push --tags && echo \"Bumped to v$V\"",
+    "marketplace": "npm run package && open https://marketplace.visualstudio.com/manage/publishers/kud"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kud/modern-cobalt2-vscode"
+  },
+  "license": "MIT"
+}
