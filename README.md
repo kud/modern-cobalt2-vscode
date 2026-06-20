@@ -1,14 +1,31 @@
-# Modern Cobalt2
+<div align="center">
 
-<img src="images/icon.png" alt="Modern Cobalt2 icon" width="128" />
+<img src="images/icon.png" width="128" alt="Modern Cobalt2 icon" />
 
-> A modernised Cobalt2 theme for VS Code — a deep navy, Cobalt2-style UI paired with softer, Palenight-derived syntax colours.
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![TypeScript](https://img.shields.io/badge/Theme-vs--dark-3178C6?style=flat-square)
+![MIT](https://img.shields.io/badge/licence-MIT-22C55E?style=flat-square)
 
-![Screenshot](images/screenshot.png)
+**A modern take on the Cobalt2 colour scheme — deep navy blues with golden accents**
+
+<a href="https://kud.io/projects/modern-cobalt2-vscode">Website</a> · <a href="https://kud.io/projects/modern-cobalt2-vscode/docs">Documentation</a>
+
+</div>
+
+![Modern Cobalt2 screenshot](images/screenshot.png)
+
+## Features
+
+- **Deep Navy Palette** — rich `#062335` background tones that reduce eye strain during long sessions
+- **Golden Accents** — warm highlights on keywords and UI chrome that stay vivid without being harsh
+- **Palenight-derived Syntax** — softer, desaturated token colours borrowed from Palenight for comfortable extended reading
+- **Full UI Coverage** — activity bar, sidebar, status bar, panels, and terminal all share a coherent dark theme
+- **Single Focused Variant** — one well-tuned `vs-dark` theme rather than a sprawling palette of half-finished alternatives
+- **Drop-in Replacement** — named _Modern Cobalt2_ for straightforward discovery by existing Cobalt2 users
 
 ## Install
 
-**Marketplace** — open VS Code, press `Cmd+Shift+X`, search **Modern Cobalt2**, and install.
+**Marketplace** — open VS Code, press `Cmd+Shift+X`, search **Modern Cobalt2**, and click Install.
 
 **CLI**
 
@@ -16,10 +33,23 @@
 code --install-extension kud.modern-cobalt2-vscode
 ```
 
-Then `Cmd+Shift+P` → **Preferences: Color Theme** → **Modern Cobalt2**.
+## Usage
 
-## Variant
+After installing, open the Command Palette (`Cmd+Shift+P`) and run **Preferences: Color Theme**, then select **Modern Cobalt2**.
 
-Ships a single `vs-dark` theme: **Modern Cobalt2**.
+## Development
 
-📚 **Full documentation → https://kud.io/projects/modern-cobalt2-vscode/docs**
+```sh
+git clone https://github.com/kud/modern-cobalt2-vscode.git
+cd modern-cobalt2-vscode
+npm install
+```
+
+Press `F5` in VS Code to open an Extension Development Host with the theme loaded. Edit `themes/cobalt2.json` and the preview updates on save.
+
+```sh
+npm run package      # build .vsix into build/
+npm run install-ext  # package and install locally
+```
+
+📚 **Full documentation → [modern-cobalt2-vscode/docs](https://kud.io/projects/modern-cobalt2-vscode/docs)**
