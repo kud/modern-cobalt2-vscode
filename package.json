@@ -45,5 +45,6 @@
     "type": "git",
     "url": "https://github.com/kud/modern-cobalt2-vscode"
   },
+  "homepage": "https://kud.io/projects/modern-cobalt2-vscode",
   "license": "MIT"
 }
